@@ -1,3 +1,18 @@
+server.port: 8080
 spring:
   application:
     name: elearn-rest
+
+spring.jpa:
+  database: POSTGRESQL
+  hibernate.ddl-auto: none
+  show-sql: true
+
+spring.datasource:
+  platform: postgres
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/postgress
+  username: postgres
+  password: postgres
+  hikari:
+    schema: portfolio_ebook
